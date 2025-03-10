@@ -1,0 +1,11 @@
+{
+  "name": "reminderapp",
+  "version": "0.0.0",
+  "description": "A reminder app to keep the reminders for task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Dhruv Sinha",
+  "license": "MIT"
+}
