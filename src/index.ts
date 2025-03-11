@@ -2,27 +2,27 @@ import { ReminderDatabase } from "./ReminderDatabase";
 
 const db = new ReminderDatabase();
 
-// Creating reminders
+
 db.createReminder("1", "Buy groceries", new Date("2025-03-12T23:59:59"));
 db.createReminder("2", "Doctor's appointment", new Date("2025-03-11T23:59:59"));
 db.createReminder("3", "Submit assignment", new Date("2025-03-10T23:59:59"));
 
-// Marking and unmarking reminders
+
 db.markReminderAsCompleted("1");
 db.unmarkReminderAsCompleted("1");
 
-// Updating reminder
+
 db.updateReminder("2", "Dentist appointment", new Date("2025-03-13T23:59:59"));
 
-// Removing a reminder
+
 db.removeReminder("3");
 
-// Function to display reminders with local time
+
 const formatReminders = (reminders: any[]) => {
     return reminders.map(r => ({
         id: r.id,
         message: r.message,
-        dueDate: r.dueDate.toLocaleString(), // Convert to local time
+        dueDate: r.dueDate.toLocaleString(), 
         completed: r.completed
     }));
 };
